@@ -1,0 +1,117 @@
+body{
+    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    background-size: 2000px 1000px;
+}
+
+.title-text{
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 90px;
+    line-height: 100px;
+    position: absolute;
+    bottom: 780px;
+    color: transparent;
+    background: conic-gradient(
+            #2C3E50 12%, #4CA1AF 12%,
+            #0F2027 33%, #203A43 33%,
+            #2C5364 55%, #b92b27 55%,
+            #c31432 70%, #240b36 70%,
+            #ad5389 87%, #3c1053 87%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    animation: expand-rev 0.5s ease forwards ;
+    cursor: pointer;
+}
+
+.title-text:hover{
+    animation: expand 0.5s ease forwards ;
+}
+
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
+.row3{
+    display: flex;
+}
+.flesh-cards{
+    position:absolute;
+    margin-top: -30px;
+    margin-left: -80px;
+    top: 300px;
+    left:800px;
+}
+
+.card{
+    text-align: center; /*text on cards*/
+    border:solid;
+    background-color: antiquewhite;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.back{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.front{
+    z-index:2;
+    backface-visibility: hidden;
+}
+.card{
+    margin-left: 10px;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.row1, .row2, .row3{
+   margin-bottom: 10px;
+}
+
+.front, .back{
+    position: absolute;
+    top:30px;
+    left: 20px;
+}
+
+@keyframes expand {
+    0%{
+     background-size: 50%;
+     background-position: 0 0 ;
+   }
+    20%{
+        background-size: 55%;
+        background-position: 0 1em ;
+    }
+
+    100%{
+        background-size: 325%;
+        background-position: -10em -4em ;
+
+    }
+}
+
+@keyframes expand-rev {
+    100%{
+        background-size: 50%;
+        background-position: 0 0 ;
+    }
+    20%{
+        background-size: 55%;
+        background-position: 0 1em ;
+    }
+
+    0%{
+        background-size: 325%;
+        background-position: -10em -4em ;
+
+    }
+}

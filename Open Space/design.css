@@ -1,0 +1,115 @@
+html{
+    background-color: black;
+}
+
+.space{
+    background-image: url("images/space.png");
+    background-size: cover;
+    margin: auto;
+    width: 1920px;
+    height: 920px;
+}
+
+.planet{
+    background-size: initial;
+    height:850px;
+    width:900px;
+    position: absolute;
+    bottom: 1px;
+    left:1px;
+    overflow: hidden;
+}
+
+.rocket{
+    background-size: initial;
+    height:500px;
+    width:400px;
+    position: absolute;
+    left: 500px;
+    bottom: 550px;
+    top: 20px;
+    transform: rotate(45deg);
+}
+.control-panel{
+    position: absolute;
+    left:1000px;
+    top:400px;
+    width: 780px;
+    height: 450px;
+    background:
+            linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+            linear-gradient(63deg, transparent 74%, #999 78%),
+            linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+            #444;
+    background-size: 16px 48px;
+}
+
+.control-panel__inner{
+    background-color: aliceblue;
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+
+.check-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 90px;
+    left: 300px;
+}
+.levers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 200px;
+    left:1px;
+}
+
+input[type="range"]{
+    transform: rotate(270deg);
+}
+
+input[type="password"]{
+    align-self: center;
+    border: thick double black;
+}
+
+input[type="button"]{
+    align-self: center;
+    border: thick double black;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#launch-btn{
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    background-color: yellow;
+    height: 50px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#ok-btn{
+    position: absolute;
+    left: 400px;
+    top: 10px;
+    background-color: yellow;
+}
+
+#text-box{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    color: grey;
+}
+
+
+
+
+

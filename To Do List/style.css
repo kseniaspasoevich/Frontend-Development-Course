@@ -1,0 +1,39 @@
+.list{
+    position:absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    top: 30%;
+    left:50%;
+    width:500px;
+    height:500px;
+}
+
+#add-task-button{
+    width:90px;
+    height:35px;
+    color: black;
+    background-color: palevioletred;
+    position: relative;
+    left:10px;
+}
+
+#input-task{
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+.delete-btn{
+    border-radius: 50%;
+    height:20px;
+    width:23px;
+    color: white;
+    background-color: red;
+    position: relative;
+    left:50px;
+}
+
+input[type="checkbox"]:checked + .task{
+    text-decoration: line-through;
+}
+
+

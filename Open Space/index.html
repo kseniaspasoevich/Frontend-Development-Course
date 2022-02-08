@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<script src="../../Open%20Space/Open%20Space/task/src/script.js" defer></script>
+<div class="space">
+    <div class="planet-area">
+        <img class="planet" src="https://stepik.org/media/attachments/lesson/452681/mars.png" alt="planet">
+        <img class="rocket" src="https://stepik.org/media/attachments/lesson/452681/rocket.png" alt="rocket" id="rocket">
+    </div>
+
+    <div class="control-panel">
+        <div class="control-panel__inner" onchange="prepareForLaunch()">
+        <input type="password" size="30" id="text-box">
+        <input type="button" size="10" value="OK" id="ok-btn">
+
+        <div class="check-buttons" onchange="setCheckboxes()">
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+        </div>
+
+        <div class="levers" onchange="setRanges()">
+            <input type="range" disabled>
+            <input type="range" disabled>
+            <input type="range" disabled>
+            <input type="range" disabled>
+            <input type="range" disabled>
+        </div>
+
+        <input type="button" size="15" value="LAUNCH" id="launch-btn" disabled>
+        </div>
+    </div>
+</div>
+</body>
+</html>
