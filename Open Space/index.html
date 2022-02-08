@@ -1,12 +1,54 @@
+<!--!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="planet" src="https://stepik.org/media/attachments/lesson/452681/mars.png" alt="Planet">
+        <img class="rocket" src="https://stepik.org/media/attachments/lesson/452681/rocket.png" alt="Rocket" id="rocket">
+    </div>
+    <div class="control-panel">
+
+        <div class="control-panel__inner" onchange="checkForLaunch()">
+            <input type="password" id = "password-field">
+            <input type="button" value="ok" id="ok-button">
+            <div class="check-buttons"  onchange="checkCheckboxes()">
+                <input type="checkbox" id="check1" disabled>
+                <input type="checkbox" id="check2" disabled>
+                <input type="checkbox" id="check3" disabled>
+                <input type="checkbox" id="check4" disabled>
+                <input type="checkbox" id="check5" disabled>
+                <input type="checkbox" id="check6" disabled>
+            </div>
+            <div class="levers" onchange="checkSliders()">
+                <input type="range" id="range1" disabled>
+                <input type="range" id="range2" disabled>
+                <input type="range" id="range3" disabled>
+                <input type="range" id="range4" disabled>
+                <input type="range" id="range5" disabled>
+            </div>
+            <input type="button" value="launch" id="launch-button" disabled>
+        </div>
+
+    </div>
+</div>
+</body>
+</html-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Open Space</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="../../Open%20Space/Open%20Space/task/src/script.js" defer></script>
+<script src="script.js" defer></script>
 <div class="space">
     <div class="planet-area">
         <img class="planet" src="https://stepik.org/media/attachments/lesson/452681/mars.png" alt="planet">
@@ -14,30 +56,31 @@
     </div>
 
     <div class="control-panel">
-        <div class="control-panel__inner" onchange="prepareForLaunch()">
-        <input type="password" size="30" id="text-box">
-        <input type="button" size="10" value="OK" id="ok-btn">
+        <div class="control-panel__inner" onchange="checkForLaunch()">
+            <input type="password" size="30" id="password-field">
+            <input type="button" size="10" value="OK" id="ok-button">
 
-        <div class="check-buttons" onchange="setCheckboxes()">
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-        </div>
+            <div class="check-buttons" onchange="checkCheckboxes()">
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+            </div>
 
-        <div class="levers" onchange="setRanges()">
-            <input type="range" disabled>
-            <input type="range" disabled>
-            <input type="range" disabled>
-            <input type="range" disabled>
-            <input type="range" disabled>
-        </div>
+            <div class="levers" onchange="checkSliders()">
+                <input type="range" disabled>
+                <input type="range" disabled>
+                <input type="range" disabled>
+                <input type="range" disabled>
+                <input type="range" disabled>
+            </div>
 
-        <input type="button" size="15" value="LAUNCH" id="launch-btn" disabled>
+            <input type="button" size="15" value="LAUNCH" id="launch-button" disabled>
         </div>
     </div>
 </div>
 </body>
 </html>
+

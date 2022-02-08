@@ -3,7 +3,7 @@ html{
 }
 
 .space{
-    background-image: url("images/space.png");
+    background: url("https://stepik.org/media/attachments/lesson/452681/space.png");
     background-size: cover;
     margin: auto;
     width: 1920px;
@@ -85,7 +85,7 @@ input[type="button"]{
     font-family: "Comic Sans MS", sans-serif;
 }
 
-#launch-btn{
+#launch-button{
     position: absolute;
     top: 330px;
     left: 300px;
@@ -95,21 +95,19 @@ input[type="button"]{
     border-radius: 50%;
 }
 
-#ok-btn{
+#ok-button{
     position: absolute;
     left: 400px;
     top: 10px;
     background-color: yellow;
 }
 
-#text-box{
+#password-field{
     position: absolute;
     left: 100px;
     top: 10px;
     color: grey;
 }
-
-
 
 
 

@@ -1,4 +1,35 @@
-.list{
+body{
+    background-color: black;
+}
+
+.title-h1{
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 90px;
+    line-height: 100px;
+    position: absolute;
+    left: 780px;
+    color: transparent;
+    background: conic-gradient(
+            #2C3E50 12%, #4CA1AF 12%,
+            #0F2027 33%, #203A43 33%,
+            #2C5364 55%, #b92b27 55%,
+            #c31432 70%, #240b36 70%,
+            #ad5389 87%, #3c1053 87%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    animation: expand-rev 0.5s ease forwards ;
+    cursor: pointer;
+}
+
+.title-h1:hover{
+    animation: expand 0.5s ease forwards ;
+}
+
+.task{
+    color: wheat;
+}
+
+.main-container{
     position:absolute;
     margin-top: -50px;
     margin-left: -50px;
@@ -9,17 +40,24 @@
 }
 
 #add-task-button{
-    width:90px;
+    width:100px;
     height:35px;
     color: black;
     background-color: palevioletred;
-    position: relative;
-    left:10px;
+    position: absolute;
+    left:1300px;
+    top: 300px;
+    border-color: wheat;
+    border-radius: 30%;
 }
 
 #input-task{
-    width: 200px;
+    width: 500px;
     background-color: antiquewhite;
+    border: wheat;
+    position: absolute;
+    left: 750px;
+    top: 300px;
 }
 
 .delete-btn{
@@ -28,12 +66,52 @@
     width:23px;
     color: white;
     background-color: red;
+    border-color: wheat;
     position: relative;
     left:50px;
+}
+#task-list{
+    position: relative;
+    top:170px;
+    left:350px;
 }
 
 input[type="checkbox"]:checked + .task{
     text-decoration: line-through;
+}
+
+@keyframes expand {
+    0%{
+        background-size: 50%;
+        background-position: 0 0 ;
+    }
+    20%{
+        background-size: 55%;
+        background-position: 0 1em ;
+    }
+
+    100%{
+        background-size: 325%;
+        background-position: -10em -4em ;
+
+    }
+}
+
+@keyframes expand-rev {
+    100%{
+        background-size: 50%;
+        background-position: 0 0 ;
+    }
+    20%{
+        background-size: 55%;
+        background-position: 0 1em ;
+    }
+
+    0%{
+        background-size: 325%;
+        background-position: -10em -4em ;
+
+    }
 }
 
 
